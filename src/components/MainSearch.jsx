@@ -2,12 +2,11 @@ import { useState } from "react";
 import { Container, Row, Col, Form } from "react-bootstrap";
 import Job from "./Job";
 import { useSelector, useDispatch } from "react-redux";
-import { setQuery } from "../redux/reducer/queryReducer";
+import { setQuery } from "../redux/reducer/stateReducer";
 
 const MainSearch = () => {
-  const query = useSelector((state) => state.queryState.query);
+  const query = useSelector((state) => state.stateReducer.query);
   const dispatch = useDispatch();
-  // const [query, setQuery] = useState("");
   const [jobs, setJobs] = useState([]);
 
   const baseEndpoint = "https://strive-benchmark.herokuapp.com/api/jobs?search=";

@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import queryReducer from "../reducer/queryReducer.js";
+import stateReducer from "../reducer/stateReducer.js";
 
 export const store = configureStore({
   reducer: {
-    queryState: queryReducer,
+    stateReducer: stateReducer,
   },
 });
 export default store;

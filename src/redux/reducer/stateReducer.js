@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const querySlice = createSlice({
+const stateSlice = createSlice({
   name: "query",
 
   initialState: {
@@ -14,5 +14,5 @@ const querySlice = createSlice({
   },
 });
 
-export const { setQuery } = querySlice.actions;
-export default querySlice.reducer;
+export const { setQuery } = stateSlice.actions;
+export default stateSlice.reducer;
