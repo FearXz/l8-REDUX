@@ -22,5 +22,5 @@ const stateSlice = createSlice({
   },
 });
 
-export const { setQuery } = stateSlice.actions;
+export const { setQuery, setData, setDataFiltered } = stateSlice.actions;
 export default stateSlice.reducer;
